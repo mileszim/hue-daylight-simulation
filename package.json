@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/mileszim/hue-daylight-simulation#readme",
   "engines": {
-    "node": "~> 8.6.*"
+    "node": "^ 8.5.*"
   },
   "dependencies": {
 

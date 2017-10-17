@@ -1,12 +1,14 @@
 FROM resin/raspberrypi3-node:8.5
 
-RUN apt-get update && apt-get install -y \
-    fswebcam
-
+# Initial dependencies
+RUN apt-get update
+RUN apt-get install -y fswebcam
 RUN npm install -g yarn
 
+# Set app dir
 WORKDIR /usr/src/app
 
+# Copy
 COPY package.json package.json
 
 # This install npm dependencies on the resin.io build server,

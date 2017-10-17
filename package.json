@@ -4,7 +4,6 @@
   "description": "A node.js app for resin.io that uses a USB webcam connected to a raspberry pi to mimick the outside daylight in realtime.",
   "main": "index.js",
   "scripts": {
-    "preinstall": "bash deps.sh",
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "install": "yarn install"
@@ -27,6 +26,6 @@
     "node": "~> 8.6.*"
   },
   "dependencies": {
-    
+
   }
 }

@@ -1,7 +1,9 @@
-FROM resin/raspberrypi3-node
+FROM resin/raspberrypi3-node:8.5
 
 RUN apt-get update && apt-get install -y \
     fswebcam
+
+RUN npm install -g yarn
 
 WORKDIR /usr/src/app
 
